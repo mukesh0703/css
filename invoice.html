@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice Bill</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f4f6;
+        padding: 20px;
+    }
+    .invoice-container {
+        width: 700px;
+        margin: auto;
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .invoice-header table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    table, th, td {
+        border: 1px solid #aaa;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background: #e5e7eb;
+    }
+
+    .total-row td {
+        font-weight: bold;
+        background: #f0f0f0;
+    }
+
+    .right {
+        text-align: right;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="invoice-container">
+
+    <h2>INVOICE</h2>
+
+    <!-- Invoice Header -->
+    <div class="invoice-header">
+        <table>
+            <tr>
+                <td><strong>Invoice No:</strong> INV-2025-001</td>
+                <td><strong>Date:</strong> 24-Nov-2025</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Billed To:</strong> Mukesh Kumar</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Item Table -->
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Description</th>
+            <th>Qty</th>
+            <th>Price (₹)</th>
+            <th>Total (₹)</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Mobile Accessories</td>
+            <td>2</td>
+            <td>500</td>
+            <td>1000</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>USB Cable</td>
+            <td>1</td>
+            <td>150</td>
+            <td>150</td>
+        </tr>
+
+        <tr class="total-row">
+            <td colspan="4" class="right">Subtotal</td>
+            <td>1150</td>
+        </tr>
+
+        <tr class="total-row">
+            <td colspan="4" class="right">GST (18%)</td>
+            <td>207</td>
+        </tr>
+
+        <tr class="total-row">
+            <td colspan="4" class="right">Grand Total</td>
+            <td>1357</td>
+        </tr>
+    </table>
+
+    <p style="margin-top:30px; text-align:center; font-size:14px;">
+        Thank you for your purchase!
+    </p>
+
+</div>
+
+</body>
+</html>
